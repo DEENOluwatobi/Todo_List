@@ -13,91 +13,117 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw; 
+    width: 100%; 
 }
-header{
-    height: 15vh;
-    margin-top: 10px;
-}
-form{
-    border-radius: 5px;
-    background-color: white;
-    margin-bottom: 50px;
-}
-form input{
-    width: 350px;
-    height: 35px;
-    outline: none;
-    border: none;
-    padding: 0 5px;
-}
-form button{
-    height: 35px;
-    width: 35px;
-    background-color: rgb(6, 110, 158);
-    border: none;
-    cursor: pointer;
-}
-form button:hover{
-    background-color: rgb(5, 72, 103)
-}
-.fa-plus{
-    width: 20px;
-    color: white; 
-    padding: 5px;
-}
-.fa-plus:hover{
-    color: rgb(11, 163, 233);
+@media only screen and (max-width: 2400px)
+{
+    header{
+        height: 15vh;
+        margin-top: 10px;
+    }
+    form{
+        border-radius: 5px;
+        background-color: white;
+        margin-bottom: 50px;
+    }
+    form input{
+        width: 350px;
+        height: 35px;
+        outline: none;
+        border: none;
+        padding: 0 5px;
+    }
+    form button{
+        height: 35px;
+        width: 35px;
+        background-color: rgb(6, 110, 158);
+        border: none;
+        cursor: pointer;
+    }
+    form button:hover{
+        background-color: rgb(5, 72, 103)
+    }
+    .fa-plus{
+        width: 20px;
+        color: white; 
+        padding: 5px;
+    }
+    .fa-plus:hover{
+        color: rgb(11, 163, 233);
+    }
+    
+    /* From JavaScript*/
+    .todo-item{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        margin: 3px;
+    } 
+    li{
+        list-style: none;
+        color: rgb(2, 2, 42);
+        width: 320px;
+        height: 30px;
+        padding: 5px 0 0 5px;
+        background: white;
+    }
+    .check{
+        background-color: rgb(43, 184, 125);
+        border: none;
+        cursor: pointer;
+    }
+    .fa-check{
+        width: 35px;
+        color: white; 
+        padding: 5px;
+    }
+    .trash{
+        background-color: rgb(209, 17, 17);
+        border: none;
+        cursor: pointer;
+    }
+    .fa-trash{
+        width: 35px;
+        color: white; 
+        padding: 5px;
+    }
+    .fa-check:hover{
+        color: rgb(80, 237, 111);
+    } 
+    .check:hover{
+        background-color:  rgb(5, 105, 25);;
+    }
+    .fa-trash:hover{
+        color: rgb(243, 116, 116);
+    }
+    .trash:hover{
+        background-color:  rgb(191, 10, 10);
+    }
+    .checked{
+        background-color: rgba(43, 184, 125, 0.653);
+        transition: 0.2s ease-in-out;
+    }
 }
 
-/* From JavaScript*/
-.todo-item{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    margin: 3px;
-} 
-li{
-    list-style: none;
-    color: rgb(2, 2, 42);
-    width: 320px;
-    height: 30px;
-    padding: 5px 0 0 5px;
-    background: white;
-}
-.check{
-    background-color: rgb(43, 184, 125);
-    border: none;
-    cursor: pointer;
-}
-.fa-check{
-    width: 35px;
-    color: white; 
-    padding: 5px;
-}
-.trash{
-    background-color: rgb(209, 17, 17);
-    border: none;
-    cursor: pointer;
-}
-.fa-trash{
-    width: 35px;
-    color: white; 
-    padding: 5px;
-}
-.fa-check:hover{
-    color: rgb(80, 237, 111);
-} 
-.check:hover{
-    background-color:  rgb(5, 105, 25);;
-}
-.fa-trash:hover{
-    color: rgb(243, 116, 116);
-}
-.trash:hover{
-    background-color:  rgb(191, 10, 10);
-}
-.checked{
-    background-color: rgba(43, 184, 125, 0.653);
-    transition: 0.2s ease-in-out;
+@media only screen and (max-width: 400px){
+    form{
+        margin-bottom: 30px;
+    }
+    form input{
+        width: 200px;
+    }
+    .fa-plus:hover{
+        color: rgb(11, 163, 233);
+    }
+    
+    /* From JavaScript*/
+    .todo-item{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        margin: 3px;
+    } 
+    li{
+        width: 200px;
+    }
 }
